@@ -411,7 +411,7 @@ def playfair_encode(m,k="",cheese_map=[]):
     for i in m0:
         r.append(_playfair_2char_encode(i,map))
     return r
-def playfair_decore(c,k="",cheese_map=[]):
+def playfair_decode(c,k="",cheese_map=[]):
     assert k != "" or cheese_map != []
     if cheese_map == []:
         map = gen_cheese_map(k)
